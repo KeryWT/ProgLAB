@@ -6,7 +6,6 @@ public class EserciziWhile {
         System.out.println("Quante volte vuoi far girare il programma?");
         int n = input.nextInt();
 
-
         System.out.println("Stampiamo a video gli interi da 0 a n");
         // Stampiamo a video gli interi da 0 a n
         for (int i = 0; i <= n; i++) {
@@ -45,7 +44,6 @@ public class EserciziWhile {
         //Fattoriale di 5 = 5 * 4 * 3 * 2 * 1 = 120
     }
 }
-
 
 //    Creare una classe EserciziWhile.java che contenga un main in cui:
 //        1. Dato un intero n letto da input, si stampino a video tutti gli interi da 0 a n e poi da n a 0. Si
