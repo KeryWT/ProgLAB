@@ -9,14 +9,14 @@ public class EserciziWhile {
 
         System.out.println("Stampiamo a video gli interi da 0 a n");
         // Stampiamo a video gli interi da 0 a n
-        for (int i=0; i<=n; i++) {
+        for (int i = 0; i <= n; i++) {
             System.out.println(i);
         }
 
         System.out.println("Stampiamo a video gli interi da n a 0");
         // Stampiamo a video gli interi da n a 0
         System.out.println();
-        int j=n;
+        int j = n;
         while (j >= 0) {
             System.out.println(j);
             j--;
@@ -24,8 +24,8 @@ public class EserciziWhile {
 
         System.out.println("Stampiamo a video i numeri interi dispari da 0 a n");
 
-        for (int i = 0; i <= n; i++){
-            if (i%2 != 0){
+        for (int i = 0; i <= n; i++) {
+            if (i % 2 != 0) {
                 System.out.println(i);
             }
         }
@@ -33,7 +33,7 @@ public class EserciziWhile {
         System.out.println("Stampiamo il fattoriale di n");
         int i = 1;
         int F = n;
-        while (i < n){
+        while (i < n) {
             F = F * i;
             i++;
         }
