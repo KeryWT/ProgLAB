@@ -40,6 +40,7 @@ public class EserciziWhile {
         // for(int i=1; i < n; i++) {
         // F = F * i;
         // }
+
         System.out.println("Il fattoriale di " + n + " e' " + F);
         //Fattoriale di 5 = 5 * 4 * 3 * 2 * 1 = 120
     }
