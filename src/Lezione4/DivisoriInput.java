@@ -1,3 +1,5 @@
+package Lezione4;
+
 import java.util.Scanner;
 
 public class DivisoriInput {
@@ -16,5 +18,5 @@ public class DivisoriInput {
 }
 
 
-//    Scrivere un programma DivisoriInput.java che legge un intero da stdin e scrive su stdout tutti i
+//    Scrivere un programma Lezione4.DivisoriInput.java che legge un intero da stdin e scrive su stdout tutti i
 //    suoi divisori.

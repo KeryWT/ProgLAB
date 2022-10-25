@@ -1,3 +1,5 @@
+package Lezione4;
+
 import java.util.Scanner;
 public class SommeCifre {
     public static int numeroNcifre(int n) {
@@ -23,7 +25,7 @@ public class SommeCifre {
 }
 
 //Esercizio 11 (opzionale)
-//        Scrivere un programma SommeCifre.java che legge in input un numero N compreso tra 1 e 9, e
+//        Scrivere un programma Lezione4.SommeCifre.java che legge in input un numero N compreso tra 1 e 9, e
 //        calcola la somma di N numeri:
 //        1 + 22 + 333 + 4444 + 55555 + ... = ......
 //        Stampare un messaggio di errore se N non è compreso tra 1 e 9.

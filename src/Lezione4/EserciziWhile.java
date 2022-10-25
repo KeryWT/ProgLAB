@@ -1,3 +1,5 @@
+package Lezione4;
+
 import java.util.Scanner;
 
 public class EserciziWhile {
@@ -46,7 +48,7 @@ public class EserciziWhile {
     }
 }
 
-//    Creare una classe EserciziWhile.java che contenga un main in cui:
+//    Creare una classe Lezione4.EserciziWhile.java che contenga un main in cui:
 //        1. Dato un intero n letto da input, si stampino a video tutti gli interi da 0 a n e poi da n a 0. Si
 //        usino sia il while che il for
 //        2. Successivamente si stampino a video tutti gli interi dispari da 0 a n

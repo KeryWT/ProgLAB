@@ -1,3 +1,5 @@
+package Lezione4;
+
 import java.util.Scanner;
 public class Fibonacci {
     public static void main(String[] args) {
@@ -20,11 +22,11 @@ public class Fibonacci {
 
 
 //Esercizio 7
-//        Scrivere un programma Fibonacci.java che legge in input un numero N e stampa a video i primi N
-//        numeri della successione di Fibonacci. Ad, esempio, per N=10, l'output atteso è:
+//        Scrivere un programma Lezione4.Fibonacci.java che legge in input un numero N e stampa a video i primi N
+//        numeri della successione di Lezione4.Fibonacci. Ad, esempio, per N=10, l'output atteso è:
 //        0 1 1 2 3 5 8 13 21 34
 //        Per semplicità assumere che N>=2.
-//        Si ricorda che la successione di Fibonacci parte da due numeri 0 e 1, e ogni elemento successivo
+//        Si ricorda che la successione di Lezione4.Fibonacci parte da due numeri 0 e 1, e ogni elemento successivo
 //        della successione è ottenuto come somma dei due elementi precedenti.
 //        Suggerimento: partite da due numeri n=0 ed m=1 e stampateli. Poi a ogni iterazione aggiornali in
 //        modo che:

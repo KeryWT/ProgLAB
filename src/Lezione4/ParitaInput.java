@@ -1,3 +1,5 @@
+package Lezione4;
+
 import java.util.Scanner;
 
 public class ParitaInput {
@@ -32,7 +34,7 @@ public class ParitaInput {
 }
 
 
-//    Scrivere un programma ParitaInput.java che legge una sequenza di interi letti da stdin (terminati
+//    Scrivere un programma Lezione4.ParitaInput.java che legge una sequenza di interi letti da stdin (terminati
 //        da uno 0 che viene escluso dalla sequenza) e alla fine della sequenza stampa:
 //        • "Tutti i numeri inseriti sono dispari" se tutti i numeri inseriti sono dispari.
 //        • "Tutti i numeri inseriti sono pari" se tutti i numeri inseriti sono pari.

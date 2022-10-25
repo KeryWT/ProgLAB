@@ -1,3 +1,5 @@
+package Lezione4;
+
 import java.util.Scanner;
 
 public class MediaInput {
@@ -27,7 +29,7 @@ public class MediaInput {
 }
 
 
-//    Scrivere un programma MediaInput.java che:
+//    Scrivere un programma Lezione4.MediaInput.java che:
 //        1. Legge da stdin una sequenza di interi positivi terminata da 0
 //        2. Quando l'utente inserisce il numero 0, il programma interrompe la lettura degli input,
 //        stampa la media (come int) su stdout e termina

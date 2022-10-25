@@ -1,3 +1,5 @@
+package Lezione4;
+
 import java.util.Scanner;
 public class Quadrato {
     public static void main(String[] args) {
@@ -24,7 +26,7 @@ public class Quadrato {
 
 
 //Esercizio 6
-//        Scrivere un programma Quadrato.java che legge in input un numero N e stampa a video un quadrato di N*N
+//        Scrivere un programma Lezione4.Quadrato.java che legge in input un numero N e stampa a video un quadrato di N*N
 //        caratteri tra '*', '\' e ':' seguendo questo pattern (esempio per N=6):
 //        \:::::
 //        *\::::

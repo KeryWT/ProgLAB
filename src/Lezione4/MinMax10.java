@@ -1,3 +1,5 @@
+package Lezione4;
+
 import java.util.Scanner;
 
 public class MinMax10 {
@@ -24,7 +26,7 @@ public class MinMax10 {
 
 
 //        Esercizio 8
-//        Scrivere un programma MinMax10.java che chiede all'utente 10 interi e successivamente stampa a
+//        Scrivere un programma Lezione4.MinMax10.java che chiede all'utente 10 interi e successivamente stampa a
 //        video la differenza tra il minimo e il massimo.
 //        • Si usi un ciclo for chiedendo a ogni iterazione d'inserire un intero.
 //        • Si usino variabili opportune per il minimo e per il massimo, inizializzate usando

@@ -1,3 +1,5 @@
+package Lezione4;
+
 import java.util.Scanner;
 
 public class Floyd {
@@ -20,7 +22,7 @@ public class Floyd {
 
 
 //Esercizio 5
-//  Scrivere un programma Floyd.java che legge in input un numero N e stampa le prime N righe del triangolo di Floyd. Il triangolo di Floyd è costituito dai numeri naturali scritti in modo consecutivo, per riempire le righe con 1,2,3,... valori. Ad esempio per N=5 l'output deve essere:
+//  Scrivere un programma Lezione4.Floyd.java che legge in input un numero N e stampa le prime N righe del triangolo di Lezione4.Floyd. Il triangolo di Lezione4.Floyd è costituito dai numeri naturali scritti in modo consecutivo, per riempire le righe con 1,2,3,... valori. Ad esempio per N=5 l'output deve essere:
 //        1
 //        2   3
 //        4   5   6
