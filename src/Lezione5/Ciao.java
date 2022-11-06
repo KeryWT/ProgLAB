@@ -19,11 +19,10 @@ public class Ciao {
 
 //    Scrivere un programma Ciao.java che chiede all'utente d'inserire 5 stringhe e alla fine stampi true
 //        se sono tutte uguali a "ciao", false altrimenti.
-
 //        • Per verificare se due stringhe s1 e s2 sono uguali si usi il "metodo" equals della classe
 //        String: s1.equals(s2)
 //        • Per leggere una stringa si usi il metodo readWord() di Sin, oppure il metodo next() della
 //        classe Scanner.
-
 //        Questi metodi leggono una parola (sequenza di caratteri diversi dagli spazi)
+//        dall'input, e la ritornano come String.
 //        dall'input, e la ritornano come String.
