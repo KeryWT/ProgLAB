@@ -1,4 +1,4 @@
-package Lezione4;
+package Lezione5;
 
 public class NumeriPrimi {
     public static boolean verificaPrimalita(int num) {

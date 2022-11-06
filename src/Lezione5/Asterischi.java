@@ -1,4 +1,4 @@
-package Lezione4;
+package Lezione5;
 
 public class Asterischi {
     public static void rettangoloAsterischi(int altezza, int larghezza) {
