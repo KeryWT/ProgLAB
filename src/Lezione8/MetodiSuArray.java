@@ -1,6 +1,5 @@
 package Lezione8;
 
-import java.util.Arrays;
 import java.util.Scanner;
 // ESERCIZIO 1
 /*
@@ -41,7 +40,6 @@ public class MetodiSuArray {
     }
 
 
-
     // ESERCIZIO 2
     /*
 Esercizio 2
@@ -63,7 +61,7 @@ Modificare la classe TestInitArray per clonare l'array inserito. Verificare, tra
         int[] a2 = new int[a.length];
         if (a == null) return null;
         copiaElementi(a, a2);
-        return  a2;
+        return a2;
     }
 
     // ESERCIZIO 3
@@ -72,19 +70,11 @@ Modificare la classe TestInitArray per clonare l'array inserito. Verificare, tra
 Aggiungere alla classe MetodiSuArray i seguenti metodi iterativi:
 • int[] filtroMinoriDi(int[] a, int limiteSuperiore) che restituisce un nuovo array d'interi
 contenente tutti gli elementi di a che sono strettamente minori del valore limiteSuperiore;
-• int[] filtroIntervalloDisp(int[] a, int min, int max) che restituisce l'array degli interi copiati
-da a che sono dispari e compresi tra min e max (estremi inclusi);
-• boolean[] trasduttore(int[] a, int limiteSuperiore) che restituisce un array di booleani, in cui
-ogni elemento sia true se l'elemento di posizione corrispondente in a è inferiore o uguale a
-limiteSuperiore e false altrimenti;
-• void stampaArrayBoolean(boolean[] a) che stampa a video gli elementi di a (perché non si
-può usare stampaArrayInt?).
-Verificare il corretto funzionamento di questi metodi creando una classe TestFiltriArray, e sperimentando vari input.
      */
     public static int[] filtroMinoriDi(int[] a, int limiteSuperiore) {
         int count = 0;
         int count2 = 0;
-        for ( int i : a) {
+        for (int i : a) {
             if (i < limiteSuperiore) count++;
         }
         int[] a3 = new int[count];
@@ -94,11 +84,56 @@ Verificare il corretto funzionamento di questi metodi creando una classe TestFil
                 count2++;
             }
         }
-        return  a3;
+        return a3;
     }
 
-//    public static int[] filtroIntervalloDisp(int[] a, int min, int max) {
-//
-//    }
+    /*
+    • int[] filtroIntervalloDisp(int[] a, int min, int max) che restituisce l'array degli interi copiati
+      da a che sono dispari e compresi tra min e max (estremi inclusi);
+     */
+    public static int[] filtroIntervalloDisp(int[] a, int min, int max) {
+        int count = 0;
+        int count2 = 0;
+        for (int i : a) {
+            if (i >= min && i <= max) count++;
+        }
+        int[] a4 = new int[count];
+        for (int i : a) {
+            if (i >= min && i <= max) {
+                a4[count2] = i;
+                count2++;
+            }
+        }
+        return a4;
+    }
+
+    /*
+    • boolean[] trasduttore(int[] a, int limiteSuperiore) che restituisce un array di booleani, in cui
+      ogni elemento sia true se l'elemento di posizione corrispondente in a è inferiore o uguale a
+      limiteSuperiore e false altrimenti;
+     */
+    public static boolean[] trasduttore(int[] a, int limiteSuperiore) {
+        int count = 0;
+        boolean[] inf = new boolean[a.length];
+        for (int i : a) {
+            inf[count] = i <= limiteSuperiore;
+            count++;
+        }
+        return inf;
+    }
+
+    /*
+    • void stampaArrayBoolean(boolean[] a) che stampa a video gli elementi di a (perché non si
+      può usare stampaArrayInt?). ---> Perché a è booleano, zio pera-
+
+      Verificare il corretto funzionamento di questi metodi creando una classe TestFiltriArray,
+      e sperimentando vari input.
+     */
+
+    public static void stampaArrayBoolean(boolean[] a) {
+        for (boolean i : a) {
+            System.out.print(i + " ");
+        }
+    }
 }
 
