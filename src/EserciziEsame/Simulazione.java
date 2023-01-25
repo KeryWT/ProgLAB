@@ -1,76 +1,77 @@
 package EserciziEsame;
-import java.util.Scanner;
+
+//import java.util.Scanner;
 
 
 public class Simulazione {
-public static void Main(String[] args){
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Inserisci numero righe. La matrice deve essere quadrata o nulla: ");
-    final int maxr = sc.nextInt();
-    System.out.println("Inserisci numero colonne. La matrice deve essere quadrata o nulla: ");
-    final int maxc = sc.nextInt();
+    public static void main(String[] args) {
+//        int maxr = 3;
+//        int maxc = 3;
 
-    int[][] matrice = new int[maxr] [maxc];
-    for (int i = 0; i < maxr; i++) {
-        for (int j = 0; j < maxc; j++) {
-            System.out.println("Scrivi il numero da inserire in posizione" + i + ',' + j);
-            matrice[i][j]= sc.nextInt();
+        int[][] matrice = {{3,3,3},{3,5,6},{3,8,9}};
+//        for (int i = 0; i < maxr; i++) {
+//            for (int j = 0; j < maxc; j++) {
+//                matrice[i][j] = 1;
+//            }
+//        }
+        System.out.println(e1(matrice));
+    }
+
+    /* ESERCIZIO 1.
+     * Scrivere un metodo iterativo e1 con le seguenti
+     * caratteristiche:
+     * -) e1 ha un parametro formale di tipo matrice
+     * bidimensionale di interi che puo' essere solo
+     * quadrata, o nulla.
+     * -) e1 restituisce true quando:
+     *    a) la matrice non è nulla e
+     *    b) la somma degli elementi di ciascuna riga
+     *    coincide con la somma degli elementi della
+     *    colonna corrispondente. */
+
+    public static boolean e1(int[][] matrice) {
+        if (matrice == null) {
+            return false;
+        } else {
+            boolean boo = true;
+            for (int i = 0; i < matrice.length; i++) {
+                int sri = 0;
+                int scol = 0;
+
+                for (int j = 0; j < matrice[i].length; j++) {
+                    sri += matrice[i][j];
+                    scol += matrice[j][i];
+                }
+                if (sri != scol) {
+                    boo = false;
+                }
+            }
+            return boo;
         }
-    }
-    if (matrice == null || matrice.length == 0 || matrice[0].length == 0) {
-        
-    }
 
-
+    }
 }
 
-//public static boolean e1(int matrice){
+/* ESERCIZIO 2.
+ * Scrivere un metodo ricorsivo dicotomico e2 con
+ * le seguenti caratteristiche:
+ * -) e2 ha un parametro formale di tipo matrice
+ * bidimensionale di interi che puo' essere solo
+ * quadrata, o nulla.
+ * -) e2 restituisce true quando:
+ *    a) la matrice non è nulla e
+ *    b) la somma degli elementi di ciascuna riga
+ *    coincide con la somma degli elementi della
+ *    colonna corrispondente.
+ * Per il calcolo della somma degli elementi in
+ * una riga, definire un metodo ricorsivo sommaR
+ * co-variante. Per il calcolo della somma degli
+ * elementi in una colonna, definire un metodo
+ * ricorsivo sommaC contro-variante.           */
+
+//public static boolean e2(matrice[][]){
 //
 //}
-}
-
-
-
-
-	/* ESERCIZIO 1.
-	 * Scrivere un metodo iterativo e1 con le seguenti
-	 * caratteristiche:
-	 * -) e1 ha un parametro formale di tipo matrice
-	 * bidimensionale di interi che puo' essere solo
-	 * quadrata, o nulla.
-	 * -) e1 restituisce true quando:
-	 *    a) la matrice non e' nulla e
-	 *    b) la somma degli elementi di ciascuna riga
-	 *    concide con la somma degli elementi della
-	 *    colonna corrispondente. */
-
-
-
-	/* ESERCIZIO 2.
-	 * Scrivere un metodo ricorsivo dicotomico e2 con
-	 * le seguenti caratteristiche:
-	 * -) e2 ha un parametro formale di tipo matrice
-	 * bidimensionale di interi che puo' essere solo
-	 * quadrata, o nulla.
-	 * -) e2 restituisce true quando:
-	 *    a) la matrice non e' nulla e
-	 *    b) la somma degli elementi di ciascuna riga
-	 *    concide con la somma degli elementi della
-	 *    colonna corrispondente.
-	 * Per il calcolo della somma degli elementi in
-	 * una riga, definire un metodo ricorsivo sommaR
-	 * co-variante. Per il calcolo della somma degli
-	 * elementi in una colonna, definire un metodo
-	 * ricorsivo sommaC contro-variante.           */
-
-
-
-
-
-
-
-
-
 
 	/* ESERCIZIO 3.
      * Siano dati:
@@ -99,17 +100,6 @@ public static void Main(String[] args){
 		}
 	}
 */
-
-
-
-
-
-
-
-
-
-
-
 
 	/* ESERCIZIO 4. Disegnare lo stato della
 	 * memoria immediatamente prima della
