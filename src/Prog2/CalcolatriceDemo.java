@@ -1,9 +1,9 @@
 package Prog2;
 
 class Calcolatrice { //classe non eseguibile e non pubblica
-    // la memoria di una calcolatrice e' una pila che contiene fino a 100 interi.
-    // L'ultimo intero e' il risultato delle operazioni fatte finora
-    // e la prossima operazione agisce sugli ultimi due interi a,b
+    // la memoria di una calcolatrice è una pila che contiene fino a 100 interi.
+    // L'ultimo intero è il risultato delle operazioni fatte finora
+    // e la prossima operazione agisce sugli ultimi due interi a, b
     // e li rimpiazza con a+b (per una addizione) oppure a*b (per una moltiplicazione)
 
     // stack = pila che contiene fino a 100 interi */
